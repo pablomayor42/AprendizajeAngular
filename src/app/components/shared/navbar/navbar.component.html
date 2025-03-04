@@ -1,0 +1,27 @@
+<style>
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #212121;
+    color: white;
+    padding: 10px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav a.active{
+    color: red;
+  }
+</style>
+
+
+<nav>
+  <a routerLink="/" routerLinkActive="active"
+  [routerLinkActiveOptions]="{ exact: true }">Contador</a> <!-- esto es para que solo se active cuando estemos en la ruta exacta -->
+  <a routerLink="/hero" routerLinkActive="active">Hero</a>
+  <a routerLink="/dragonball" routerLinkActive="active">Dragonball</a>
+  <a routerLink="/dragonballSuper" routerLinkActive="active">Dragonball Super</a>
+</nav>
